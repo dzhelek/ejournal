@@ -1,0 +1,48 @@
+﻿@page
+@model EJournal.Pages.Grades.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Journal[0].NAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Journal[0].SUBJECT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Journal[0].GRADE)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Journal) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NAME)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SUBJECT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GRADE)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
