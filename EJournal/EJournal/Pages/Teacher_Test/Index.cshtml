@@ -1,5 +1,5 @@
 ﻿@page
-@model EJournal.Pages.Grades.IndexModel
+@model EJournal.Pages.Teacher_Test.IndexModel
 
 @{
     ViewData["Title"] = "Index";
@@ -43,12 +43,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.TEACHER)
             </td>
-
-            <!--- <td>
+            <td>
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
                 <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
-            </td> -->
+            </td>
         </tr>
 }
     </tbody>

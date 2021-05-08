@@ -1,5 +1,5 @@
 ﻿@page
-@model EJournal.Pages.Grades.CreateModel
+@model EJournal.Pages.Teacher_Test.CreateModel
 
 @{
     ViewData["Title"] = "Create";
@@ -28,18 +28,17 @@
                 <input asp-for="Journal.GRADE" class="form-control" />
                 <span asp-validation-for="Journal.GRADE" class="text-danger"></span>
             </div>
-            <label asp-for="Journal.TEACHER" class="control-label"></label>
-            <input asp-for="Journal.TEACHER" class="form-control" />
-            <span asp-validation-for="Journal.TEACHER" class="text-danger"></span>
+            <div class="form-group">
+                <label asp-for="Journal.TEACHER" class="control-label"></label>
+                <input asp-for="Journal.TEACHER" class="form-control" />
+                <span asp-validation-for="Journal.TEACHER" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
         </form>
     </div>
-
-    <div class="form-group">
-        <input type="submit" value="Create" class="btn btn-primary" />
-    </div>
-    
 </div>
-
 
 <div>
     <a asp-page="Index">Back to List</a>

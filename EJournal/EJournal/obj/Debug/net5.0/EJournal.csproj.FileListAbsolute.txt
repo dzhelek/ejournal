@@ -162,3 +162,8 @@ C:\Users\kaloy\Desktop\ejournal\EJournal\EJournal\obj\Debug\net5.0\Razor\Pages\G
 C:\Users\kaloy\Desktop\ejournal\EJournal\EJournal\obj\Debug\net5.0\Razor\Pages\Grades\Details.cshtml.g.cs
 C:\Users\kaloy\Desktop\ejournal\EJournal\EJournal\obj\Debug\net5.0\Razor\Pages\Grades\Edit.cshtml.g.cs
 C:\Users\kaloy\Desktop\ejournal\EJournal\EJournal\obj\Debug\net5.0\Razor\Pages\Grades\Index.cshtml.g.cs
+C:\Users\kaloy\Desktop\ejournal\EJournal\EJournal\obj\Debug\net5.0\Razor\Pages\Teacher_Test\Create.cshtml.g.cs
+C:\Users\kaloy\Desktop\ejournal\EJournal\EJournal\obj\Debug\net5.0\Razor\Pages\Teacher_Test\Delete.cshtml.g.cs
+C:\Users\kaloy\Desktop\ejournal\EJournal\EJournal\obj\Debug\net5.0\Razor\Pages\Teacher_Test\Details.cshtml.g.cs
+C:\Users\kaloy\Desktop\ejournal\EJournal\EJournal\obj\Debug\net5.0\Razor\Pages\Teacher_Test\Edit.cshtml.g.cs
+C:\Users\kaloy\Desktop\ejournal\EJournal\EJournal\obj\Debug\net5.0\Razor\Pages\Teacher_Test\Index.cshtml.g.cs

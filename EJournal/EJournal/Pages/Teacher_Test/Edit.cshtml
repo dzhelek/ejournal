@@ -1,11 +1,11 @@
 ﻿@page
-@model EJournal.Pages.Grades.CreateModel
+@model EJournal.Pages.Teacher_Test.EditModel
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Edit";
 }
 
-<h1>Create</h1>
+<h1>Edit</h1>
 
 <h4>Journal</h4>
 <hr />
@@ -13,6 +13,7 @@
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Journal.ID" />
             <div class="form-group">
                 <label asp-for="Journal.NAME" class="control-label"></label>
                 <input asp-for="Journal.NAME" class="form-control" />
@@ -28,21 +29,20 @@
                 <input asp-for="Journal.GRADE" class="form-control" />
                 <span asp-validation-for="Journal.GRADE" class="text-danger"></span>
             </div>
-            <label asp-for="Journal.TEACHER" class="control-label"></label>
-            <input asp-for="Journal.TEACHER" class="form-control" />
-            <span asp-validation-for="Journal.TEACHER" class="text-danger"></span>
+            <div class="form-group">
+                <label asp-for="Journal.TEACHER" class="control-label"></label>
+                <input asp-for="Journal.TEACHER" class="form-control" />
+                <span asp-validation-for="Journal.TEACHER" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
         </form>
     </div>
-
-    <div class="form-group">
-        <input type="submit" value="Create" class="btn btn-primary" />
-    </div>
-    
 </div>
 
-
 <div>
-    <a asp-page="Index">Back to List</a>
+    <a asp-page="./Index">Back to List</a>
 </div>
 
 @section Scripts {

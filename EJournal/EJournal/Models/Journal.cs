@@ -15,5 +15,7 @@ namespace EJournal.Models
         [Column(TypeName = "decimal(18, 2)")]
         public decimal GRADE { get; set; }
 
+        public string TEACHER { get; set; }
+
     }
 }
